@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My Personal Website</title>
+ <link rel="stylesheet" href="styles.css">
+ <script>
+ function showPage(pageId) {
+ var page = document.getElementById(pageId);
+ var mainContent = document.getElementsByClassName("center-content")[0];
+ mainContent.innerHTML = page.innerHTML;
+ }
+ </script>
+</head>
+<body style="background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230627/pngtree-sleek-geometric-podium-on-a-black-abstract-background-high-quality-3d-image_3687120.jpg); background-size: 100% 100%;">
+ <header>
+ <div class="logo-container">
+ <img class="circular-image" src="C:\Users\prven\OneDrive\Desktop\Remo\REMO_PIC.jpg" alt="Logo">
+ </div>
+ <nav>
+ <ul>
+ <li><a href="#top">Home</a></li>
+ <li><a href="https://www.w3schools.com/">About</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main>
+ <section id="home" class="center-content">
+ <video class="profile-video" autoplay muted loop>
+ <source src="C:\Users\prven\Downloads\vecteezy_hello-animated-text-great-for-social-media-background-or_22941159.mp4" type="video/mp4">
+ </video>
+ <div class="text-content">
+ <h2>Hi, I'm Revanth Venkat Pasupuleti</h2>
+ <p>Future-driven innovator and Developer</p>
+ <a class="button" href="#" onclick="showPage('about')">Learn More</a>
+ </div>
+ </section>
+ <section id="about" style="display:none;">
+ <h2>Hi, I'm Revanth Venkat Pasupuleti</h2>
+ <p>Future-driven innovator and Developer</p>
+ <b>
+ <h3 style="color: white;">CV</h3>
+ <p>Here is a link to my CV: 
+    <br>
+    <a href="C:\Users\prven\OneDrive\Desktop\class notes\resume.pdf">Download CV</a></p>
+ <h3 style="color: white;">Skillset</h3>
+ <ul style="color: white;">
+ <li>Coding skills</li>
+ <li>Communication and leadership skills</li>
+ <li>non-verbal and reasoning skills</li>
+ </ul>
+
+ <h3 style="color: white;">Projects</h3>
+ <ul style="color: white;">
+ <li>Age caluculator using c</li>
+ <li>Task manager using c++</li>
+ <li>Deluge rpg automation bot using python</li>
+ </ul>
+ </b>
+ </section>
+ </main>
+ <footer>
+ </footer>
+</body>
+</html>
